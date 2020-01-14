@@ -7,9 +7,8 @@ import { HomeComponent } from './Pages/home/home.component';
 import { HousesComponent } from './Pages/houses/houses.component';
 import { CharactersComponent } from './Pages/characters/characters.component';
 import { TimelineComponent } from './Pages/timeline/timeline.component';
-import { CharactersService } from './Core/characters.service';
-import { NavComponent } from './Components/nav/nav.component';
-import { TranslateComponent } from './Components/translate/translate.component';
+import { NavComponent } from './Shared/Components/nav/nav.component';
+import { TranslateComponent } from './Shared/Components/translate/translate.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { TranslateComponent } from './Components/translate/translate.component';
     HousesComponent,
     CharactersComponent,
     TimelineComponent,
-    CharactersService,
     NavComponent,
     TranslateComponent
   ],
