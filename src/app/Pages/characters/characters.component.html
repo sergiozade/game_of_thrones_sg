@@ -1,1 +1,13 @@
 <p>characters Sergio works!</p>
+
+
+
+<div class="row">
+
+<div class="col-3" *ngFor='let item of characters$ | async'>
+  <img [src]="item.image">
+  <h2>{{ item.name.first | uppercase }}</h2>
+  <p>{{ item.email }}</p>
+</div>
+
+</div>
