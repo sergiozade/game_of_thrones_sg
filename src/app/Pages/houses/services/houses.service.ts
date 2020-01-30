@@ -12,8 +12,7 @@ export class HousesService {
   constructor(private httpclient: HttpClient) {}
 
   getHouses(): Observable<any> {
-    const observable: Observable<any> = this.httpclient.get(this.url);
-    return observable;
+    return this.httpclient.get(this.url);
     }
 }
 

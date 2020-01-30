@@ -1,1 +1,11 @@
 <p>houses Sergio works!</p>
+
+<div class="row">
+
+<div class="col-3" *ngFor='let house of houses$ | async'>
+  <img [src]="house.logoURL">
+  <h2>{{ house.name.first | uppercase }}</h2>
+  <p>{{ house.email }}</p>
+</div>
+
+</div>

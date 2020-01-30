@@ -1,0 +1,26 @@
+.wrapper-lang{
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  width:100%;
+  max-width: 90%;
+  margin-top:2rem;
+}
+
+.en-icon .es-icon span{
+  cursor: pointer;
+}
+
+.en-icon{
+  &:nth-of-type(1){
+    padding-right:3rem;
+  }
+
+}
+// {
+// font-family: got;
+// color: white;
+// }
+//Position absolute para colocar por encima

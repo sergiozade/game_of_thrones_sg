@@ -6,6 +6,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SearchComponent } from './components/search/search.component';
 import { CharactersDetailComponent } from './components/characters-detail/characters-detail.component';
 
+
 const COMPONENTS = [
   NavComponent,
   SpinnerComponent,
@@ -15,7 +16,7 @@ const COMPONENTS = [
 
 
 @NgModule({
-  declarations: [...COMPONENTS, CharactersDetailComponent],
+  declarations: [...COMPONENTS],
   imports: [
     CommonModule,
     RouterModule,
