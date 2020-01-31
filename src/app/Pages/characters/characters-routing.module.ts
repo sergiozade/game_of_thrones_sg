@@ -4,7 +4,8 @@ import { CharactersComponent } from './characters.component';
 import { HttpClient } from '@angular/common/http';
 
 const routes: Routes = [
-  { path:  '', component: CharactersComponent}
+  { path:  '', component: CharactersComponent},
+  // { path:  ':characterName', component: CharactersComponent}
 ];
 
 @NgModule({

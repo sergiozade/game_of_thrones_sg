@@ -1,6 +1,22 @@
 {
   "demo": {
-      "title": "Translation demo",
+      "title": "Game Of Thrones",
       "text": "This is a simple demonstration app for ngx-translate"
-  }
+  },
+
+  "characters": {
+    "title": "Characters",
+    "text": "This is a simple demonstration app for ngx-translate"
+  },
+
+  "houses": {
+    "title": "Houses",
+    "text": "This is a simple demonstration app for ngx-translate"
+},
+
+  "timeline": {
+   "title": "Timeline",
+    "text": "This is a simple demonstration app for ngx-translate"
+}
+
 }

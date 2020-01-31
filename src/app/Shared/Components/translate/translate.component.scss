@@ -4,13 +4,18 @@
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
+  // background-color: rgb(180, 55, 55);
+  z-index: 100; //Esto me sirve para poder subir una capa por encima de otra capa
   width:100%;
-  max-width: 90%;
+  max-width: 97vw;
   margin-top:2rem;
 }
 
-.en-icon .es-icon span{
+wrapper-lang{
   cursor: pointer;
+    &house-icon{
+
+    }
 }
 
 .en-icon{

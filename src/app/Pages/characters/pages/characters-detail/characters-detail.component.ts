@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-characters-detail',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharactersDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+    // const name = this.route.snapshot['characterName'] // allParams is an object
+
+  }
 
   ngOnInit() {
   }

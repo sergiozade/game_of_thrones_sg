@@ -1,20 +1,8 @@
 <nav class="nav">
-  <div >
-      <div class="nav__logo">
-          <img src="" alt="">
-      </div>
-      <div class="nav__list">
-          <div class="nav__list--item">
-            <a [routerLink]="'/home'"> Home</a>
-            <a [routerLink]="'/houses'"> Houses</a>
-            <a [routerLink]="'/characters'"> Characters</a>
-            <a [routerLink]="'/timeline'"> Timeline</a>
-          </div>
-      </div>
-  </div>
-
+    <div class="nav__list">
+      <a [routerLink]="'/characters'">  {{'characters.title' | translate}}</a>
+      <a [routerLink]="'/houses'"> {{'houses.title' | translate}}</a>
+      <a [routerLink]="'/timeline'">{{'timeline.title' | translate}}</a>
+    </div>
 </nav>
 
-<div>
-  <app-translate></app-translate>
-</div>

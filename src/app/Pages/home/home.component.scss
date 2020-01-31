@@ -10,7 +10,14 @@
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+      font-family: got;
+      font-size: 9.5rem;
+      letter-spacing: 20px;
+      text-align: center;
+    }
   }
-
-
 }

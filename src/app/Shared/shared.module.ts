@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { NavComponent } from './components/nav/nav.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { SearchComponent } from './components/search/search.component';
-import { CharactersDetailComponent } from './components/characters-detail/characters-detail.component';
+import { CharactersDetailComponent } from '../pages/characters/pages/characters-detail/characters-detail.component';
 
 
 const COMPONENTS = [

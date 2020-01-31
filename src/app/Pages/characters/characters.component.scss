@@ -1,0 +1,79 @@
+.row{
+  max-height: 85vh; //con esto hago que mida solo el 85% de la pantalla y esté más arriba de las letras esas to feas por que no ocupa toda la pantalla
+  overflow: auto; //con esto hago scroll
+  max-width: 95%;
+  margin: 0 auto; //con esto he agregado el margen 0 a todos los margin: top, right, left...
+  padding-top:10rem; //Pa` que me acuerde bien, el padding es el margene entre el contenido y el div
+}
+
+.character {
+  height: 380px;
+  max-width: 350px;
+  overflow: hidden; //todo lo que esté por fuera del tamaño de atrás se oculte
+  position: relative; //Relativaso aquí para poder utilizar el componente character content
+  padding-bottom:2rem;
+  cursor: pointer;
+  &:hover {
+    .character__content {
+      bottom: 0; //aquí le digo que cuando ponga el puntero suba hasta el 0px
+    }
+  }
+  &__image {
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    transition: 0.4s;
+    bottom: -100%;
+    width: 100%;
+    position: absolute;
+    left: 20;
+    padding: 0.5em;
+    background: rgba(black, 0.8); //color del fondo y opacidad
+    padding: 1rem;
+    h2 {
+      font-family:got;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1,2rem;
+      font-weight: normal;
+    }
+    // p {
+    //   color: white;
+    //   font-size: 1rem;
+    //   font-weight: normal;
+    // }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media only screen and (max-width: 600px) {
+//   .character{
+//     max-width: none;
+//     .character__content{
+//       bottom: 0px;
+//     }
+//   }
+
+// }
