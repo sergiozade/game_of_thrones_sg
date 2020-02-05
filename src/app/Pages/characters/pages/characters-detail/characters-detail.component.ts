@@ -9,8 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CharactersDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) {
-    // const name = this.route.snapshot['characterName'] // allParams is an object
-
+    // const name = this.route.snapshot['characterDetail'] // allParams is an object
   }
 
   ngOnInit() {

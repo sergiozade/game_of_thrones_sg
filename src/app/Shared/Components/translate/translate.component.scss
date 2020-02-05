@@ -11,19 +11,20 @@
   margin-top:2rem;
 }
 
-wrapper-lang{
+.wrapper-lang{
   cursor: pointer;
-    &house-icon{
-
-    }
 }
 
 .en-icon{
-  &:nth-of-type(1){
-    padding-right:3rem;
-  }
-
+  //&:nth-of-type(1){} con esto selecciono a un elemento concreto, le digo que al 1 le de mas espacio.
+    padding-right:2rem;
 }
+
+.home-icon{
+  padding-right:2rem;
+}
+
+
 // {
 // font-family: got;
 // color: white;

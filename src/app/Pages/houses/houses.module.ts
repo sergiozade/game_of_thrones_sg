@@ -5,10 +5,12 @@ import { NgModule } from '@angular/core';
 import { HousesRoutingModule } from './houses-routing.module';
 import { HousesComponent } from './houses.component';
 import { CommonModule } from '@angular/common';
+import { HousesDetailComponent } from './pages/houses-detail/houses-detail.component';
 
 @NgModule({
   declarations: [
-    HousesComponent
+    HousesComponent,
+    HousesDetailComponent
   ],
   imports: [
     CommonModule,

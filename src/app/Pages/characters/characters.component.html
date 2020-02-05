@@ -1,20 +1,21 @@
 
-<div class="row">
-  <div class="character col-2" *ngFor='let item of characters$ | async'>
-
+<div class="row"> <!-- Aquí debajo introduzco el [RouterLink] con lo que llamo a la página de detalle de personaje al tocar cualquier personaje -->
+  <a [routerLink]="[ item.name ]" class="character col-2" *ngFor='let item of characters$ | async'>
  <!--Esto es para pillar la imagen y que no se desforme al ponerle cualquier tamaño, con backgroundimage es mas facil y en anterior ejemplo lo hice directamente con la imagen y era mas dificil poder ponerle un tamaño-->
     <div class="character__image" [ngStyle]="{'background-image': 'url('+item.image+')'}">
-      <a id="{{item.id}}"></a> <!-- esto es el id para hacer el router link al detalle characters luego -->
+      <a id="{{item.id}}" ></a> <!-- esto es el id para hacer el router link al detalle characters luego -->
     </div>
 
     <div class="character__content">
       <h2>{{item.name | uppercase}}</h2> <!-- aqui llamo a la nombre de la imagen y lo pongo en mayusculas-->
+
     </div>
-  </div>
+  </a>
 </div>
 
 
 
+ <!--wtf >
 
 
 
@@ -28,7 +29,7 @@
 
 
 
-<!-- <div class="row">
+  <div class="row">
 
 <div class="col-3" *ngFor='let item of characters$ | async'>
   <div class="image"></div>

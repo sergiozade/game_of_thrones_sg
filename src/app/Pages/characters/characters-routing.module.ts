@@ -5,11 +5,15 @@ import { HttpClient } from '@angular/common/http';
 
 const routes: Routes = [
   { path:  '', component: CharactersComponent},
-  // { path:  ':characterName', component: CharactersComponent}
+
+  { path:  ':idCharacter', //wtf ¿Dónde he utilizado ésto?
+  loadChildren: () =>
+  import('./pages/characters-detail/characters-detail.module').then(m => m.CharactersDetailModule)
+ }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CharactersRoutingModule { }
+export class CharactersRoutingModule {}

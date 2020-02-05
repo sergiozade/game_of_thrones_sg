@@ -16,6 +16,9 @@ export class CharactersService {
     }
 
 
-/*aquí iría la llamada del navegador de Personajes*/
+/*aquí iría la llamada del navegador buscador de Personajes*/
+
+
+
 
 }
